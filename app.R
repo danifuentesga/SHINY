@@ -86,7 +86,7 @@ ui <- navbarPage(
       transition: transform .2s ease, box-shadow .2s ease;
     }
     .tile:hover {
-  transform: scale(1.12); /* 👈 zoom más grande (10–12%) */
+  transform: scale(1.12); /*  zoom más grande (10–12%) */
   box-shadow: 0 18px 40px rgba(0,0,0,0.35);
   z-index: 5;             /* asegura que se vea encima */
 }
@@ -98,7 +98,7 @@ ui <- navbarPage(
     }
     .tile-content {
   position: relative;
-  color: white;        /* 👈 todo el texto en blanco */
+  color: white;        /*  todo el texto en blanco */
   text-align: center;
   padding: 16px 24px;
   font-family: 'Montserrat', sans-serif;
@@ -131,7 +131,7 @@ ui <- navbarPage(
                .card-container {
                  display: flex;
                  justify-content: space-around;
-                 flex-wrap: nowrap;   /* 👈 fuerza a una fila */
+                 flex-wrap: nowrap;   /*  fuerza a una fila */
                  gap: 20px;
                  margin-top: 50px;
                }
@@ -140,7 +140,7 @@ ui <- navbarPage(
                  color: #008B8B;
                  border-radius: 12px;
                  padding: 40px 20px;
-                 flex: 1;   /* 👈 cada tarjeta se adapta al ancho disponible */
+                 flex: 1;   /*  cada tarjeta se adapta al ancho disponible */
                  text-align: center;
                  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
                  transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -151,12 +151,12 @@ ui <- navbarPage(
                  box-shadow: 0 12px 28px rgba(0,0,0,0.3);
                }
                .card h3 {
-                 font-size: 40px;    /* 👈 número más grande */
+                 font-size: 40px;    /*  número más grande */
                  margin-bottom: 15px;
                  font-weight: 800;
                }
                .card p {
-                 font-size: 20px;    /* 👈 texto más grande */
+                 font-size: 20px;    /*  texto más grande */
                  margin: 0;
                }
              ")),
@@ -198,7 +198,7 @@ ui <- navbarPage(
                      # Tarjeta con icono personalizado
                      div(class="card",
                          tags$img(src="icono_nat.png", 
-                                  style="height:160px; margin-bottom:1px;"),  # 👈 tu icono
+                                  style="height:160px; margin-bottom:1px;"),  #  tu icono
                          h3("17.5", style="margin-top:0;"),
                          p("Tasa de Natalidad")
                      )
@@ -206,7 +206,7 @@ ui <- navbarPage(
                      # Tarjeta con icono personalizado para Fecundidad
                      div(class="card",
                          tags$img(src="icono_fec.png", 
-                                  style="height:160px; margin-bottom:1px;"),  # 👈 icono de fecundidad
+                                  style="height:160px; margin-bottom:1px;"),  #  icono de fecundidad
                          h3("1.9", style="margin-top:0;"),
                          p("Tasa de Fecundidad")
                      )
@@ -214,7 +214,7 @@ ui <- navbarPage(
                      # Tarjeta con icono personalizado para Mortalidad
                      div(class="card",
                          tags$img(src="icono_mort.png", 
-                                  style="height:160px; margin-bottom:1px;"),  # 👈 icono de mortalidad
+                                  style="height:160px; margin-bottom:1px;"),  #  icono de mortalidad
                          h3("2.4%", style="margin-top:0;"),
                          p("Tasa de Mortalidad")
                      )
@@ -222,7 +222,7 @@ ui <- navbarPage(
                      # Tarjeta con icono personalizado para Proyección
                      div(class="card",
                          tags$img(src="icono_pro.png", 
-                                  style="height:160px; margin-bottom:1px;"),  # 👈 icono de proyección
+                                  style="height:160px; margin-bottom:1px;"),  #  icono de proyección
                          h3("1.7", style="margin-top:0;"),
                          p("Proyección 2050")
                      )
@@ -681,6 +681,7 @@ server <- function(input, output, session) {
 
 
 shinyApp(ui = ui, server = server)
+
 
 
 
